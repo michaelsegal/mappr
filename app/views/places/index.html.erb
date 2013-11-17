@@ -1,0 +1,15 @@
+
+<div>
+
+<% if @place.present? %>
+
+	Title: <%= @place.title %> <br />
+	Address: <%= @place.address %>
+
+<% else %>
+
+<h2>Enter a place</h2>
+
+<% end %>
+
+</div>

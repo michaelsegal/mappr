@@ -8,9 +8,45 @@
 </head>
 <body>
 
-<h1><%= link_to "Mapper", root_path %></h1>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+ 
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+ 
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <%= link_to 'Mappr', root_path, :class=>'brand' %>
+ 
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse collapse">
+      	 <ul class="nav">
+  	  	<li>
+  	  		<%= link_to 'New Place',new_place_path %>
+  	  	</li>
+      	
+        <!-- .nav, .navbar-search, .navbar-form, etc -->
+      </div>
+ 
+    </div>
+  </div>
+</div>
 
-<h2><%= link_to "New Place", new_place_path %></h1>
+
+
+
+
+
+
+
+
+
+
+
 
 <%= yield %>
 
